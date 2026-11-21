@@ -17,3 +17,9 @@ storage-state*.json
 *.tsbuildinfo
 *.log
 .DS_Store
+
+# Local editor settings and credentials
+.vscode/
+.aws/
+*.pem
+*.key

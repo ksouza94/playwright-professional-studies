@@ -2,14 +2,18 @@
   "name": "playwright-professional-studies",
   "version": "1.0.0",
   "private": true,
-  "description": "Laboratório de estudos profissionais de Playwright e TypeScript para QA Automation.",
+  "description": "Playwright and TypeScript QA automation portfolio covering E2E, API, and network testing.",
   "scripts": {
     "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep \"@smoke|@regression\"",
+    "test:network": "playwright test --project=network",
+    "test:api": "playwright test --project=api",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
-    "typecheck": "tsc --noEmit",
-    "report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
